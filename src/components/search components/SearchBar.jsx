@@ -23,19 +23,18 @@ const SearchBar = ({ onSearch }) => {
             console.error('Error fetching suggestions:', error);
           }
     };
-
     const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(query);
         setSuggestions([]);
     };
-
+    
     const handleSelectSuggestion = (suggestion) => {
         setQuery(suggestion);
         setSuggestions([]);
         onSearch(query);
-      };
-
+    };
+    
     return (
         <>
         <form className="input_form" onSubmit={handleSubmit}>
@@ -44,7 +43,7 @@ const SearchBar = ({ onSearch }) => {
                 value={query}
                 onChange={handleInputChange}
                 placeholder="Search for GIFs..."
-            />
+                />
             <button type="submit">
                 <SearchIcon />
             </button>
@@ -52,11 +51,13 @@ const SearchBar = ({ onSearch }) => {
         </form>
         <div className="suggestion">
             {suggestions.length > 0 && (
-                    <Autocomplete queryNow = {query} suggestions={suggestions} onSelect={handleSelectSuggestion} />
-            )}
+                <Autocomplete queryNow = {query} suggestions={suggestions} onSelect={handleSelectSuggestion} />
+                )}
         </div>
         </>
     );
 };
 
 export default SearchBar;
+
+//debounce

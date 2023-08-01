@@ -6,7 +6,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
+body{
   background-color: #121212;
 }
 
@@ -32,7 +32,7 @@ body p {
 }
 
 .main {
-  width: -57.5vw;
+  /* width: 61vw; */
   color: white;
   margin-top: 15px;
 }

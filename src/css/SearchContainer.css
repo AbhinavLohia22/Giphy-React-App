@@ -31,7 +31,8 @@ input {
     margin-bottom: 0;
 }
 
-
+/* css variables */
+/* dark mode */
 .search-icon .MuiSvgIcon-root {
     font-size: 35px;
 }
