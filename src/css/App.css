@@ -6,8 +6,27 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-  background-color: #121212;
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #333333;
+
+  --background-color-dark: #121212;
+  --text-color-dark: #ffffff;
+}
+
+
+body.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+#darkmodebtn{
+  background: green;
 }
 
 body h1 {
