@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 0 5vw;
+  width: 48vw;
+  flex: 1;
+  margin: 0 0;
+  margin-left: 102px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  margin: 10px 0;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.column :hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 5px yellow;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}

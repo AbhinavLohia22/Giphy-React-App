@@ -1,0 +1,21 @@
+.suggestion {
+    background-color: white;
+    height: max-content;
+    letter-spacing: 0.8px;
+    border-radius: 5px;
+    margin-top: 0;
+    z-index: 5;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 19px;
+    color: grey;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+li {
+    padding: 2px 14px;
+}
